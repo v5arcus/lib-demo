@@ -1,6 +1,8 @@
 pipeline {
     agent any
 
+    library identifier: 'vishant-library', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: '', id: 'a17fef62-114f-4523-b3cb-67791e9518d0', remote: 'https://github.com/vishant07/jenkins-shared-library.git', traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]])
+
     stages{
         steps{
             hello 'vishant'
