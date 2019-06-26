@@ -6,7 +6,7 @@ libraries {
 }
 
     stages{
-        stage{
+        stage('demo'){
             steps{
                 hello 'vishant'
             }
