@@ -2,7 +2,7 @@ pipeline {
     agent any
 
 libraries {
-  lib('vishant-library@docs')
+  lib('vishant-library')
 }
 
     stages{
