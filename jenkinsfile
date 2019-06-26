@@ -1,8 +1,9 @@
 pipeline {
    agent any
 
-@Library("vishant-library@master") _
-
+libraries {
+  lib('vishant-library@master')
+}
    stages {
 	stage('Demo') {
           steps {
