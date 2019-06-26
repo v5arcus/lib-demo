@@ -1,0 +1,9 @@
+pipeline {
+    agent any
+
+    stages{
+        steps{
+            hello 'vishant'
+        }
+    }
+}
