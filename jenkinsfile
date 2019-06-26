@@ -1,15 +1,11 @@
 pipeline {
-    agent any
-
-libraries {
-  lib('vishant-library@master')
-}
-
-    stages{
-        stage('demo'){
-            steps{
-                hello 'vishant'
-            }
+   agent any
+library identifier: 'vishant-library', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: '', id: 'eaed09c7-24ca-4833-a797-24c0c7ec9910', remote: 'https://github.com/vishant07/jenkins-shared-library.git', traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]])
+   stages {
+	stage('Demo') {
+          steps {
+            hello 'Joost'
+          }
         }
-    }
+   }
 }
