@@ -6,8 +6,10 @@ libraries {
 }
 
     stages{
-        steps{
-            hello 'vishant'
+        stage{
+            steps{
+                hello 'vishant'
+            }
         }
     }
 }
