@@ -9,10 +9,12 @@ libraries {
     }
 
    stages {
-	stage('Demo') {
-          steps {
-            hello 'ititititi, chiklu'
-          }
+       checkUser()
+
+	    stage('Demo') {
+              steps {
+                hello 'ititititi'
+            }
         }
    }
 }
