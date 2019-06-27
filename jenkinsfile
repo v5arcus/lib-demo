@@ -5,7 +5,7 @@ libraries {
   lib('vishant-library@master')
 }
 
-    params ''
+    params
 
     stages {
         stage('check user') {
