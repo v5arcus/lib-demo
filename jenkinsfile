@@ -7,8 +7,6 @@ libraries {
 
     params ''
 
-    }
-
     stages {
         stage('check user') {
             steps{
