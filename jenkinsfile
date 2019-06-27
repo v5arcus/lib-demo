@@ -12,7 +12,7 @@ libraries {
     stages {
         stage('check user') {
             steps{
-                checkUser 'hogya kya bhaia'
+                checkUser ''
             }
         }
 
