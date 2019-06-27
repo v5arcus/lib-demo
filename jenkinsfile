@@ -11,8 +11,7 @@ libraries {
    stages {
 	stage('Demo') {
           steps {
-            hello 'ititititi'
-            hello 'chiklu'
+            hello 'ititititi, chiklu'
           }
         }
    }
