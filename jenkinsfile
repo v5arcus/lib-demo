@@ -1,11 +1,10 @@
 pipeline {
-    agent any
+   agent any
 
 libraries {
   lib('vishant-library@master')
 }
-
-    paramaters {
+    parameters {
         params 'latest'
     }
 
