@@ -9,7 +9,7 @@ libraries {
     }
 
    stages {
-       checkUser()
+       checkUser''
 
 	    stage('Demo') {
               steps {
