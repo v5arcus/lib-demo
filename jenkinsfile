@@ -11,7 +11,9 @@ libraries {
 
     stages {
         stage('check user') {
-            checkUser ''
+            steps{
+                checkUser ''
+            }
         }
 
 	    stage('Demo') {
