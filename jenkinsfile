@@ -23,11 +23,11 @@ libraries {
             steps {
                 hello 'ititititi'
             }
+        }
         stage('deployy') {
             steps {
                 deploy 'chalo krdo abb deploy'
             }
-        }
         }
     }
 }
