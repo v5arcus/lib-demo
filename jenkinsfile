@@ -24,11 +24,6 @@ libraries {
                 hello 'ititititi'
             }
         
-        stage('deploy') {
-            steps {
-                deploy 'lets deploy'
-            }
-        }
         }
     }
 }
