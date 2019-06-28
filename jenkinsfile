@@ -6,9 +6,9 @@ library 'vishant-library@master'
         hello.call()
     }
 
-    stage('call param') {
+    // stage('call param') {
         
-    }
+    // }
 }
 
 // pipeline {
