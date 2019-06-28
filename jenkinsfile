@@ -8,7 +8,7 @@ node {
     }
 
     stage('hello world') {
-        echo 'hello world'
+        hello.call()
     }
 
     stage('call param') {
