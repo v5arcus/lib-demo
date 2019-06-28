@@ -1,4 +1,4 @@
-library 'vishant-library@master'
+@Library 'vishant-library@master' _
 node {
 
     properties([
