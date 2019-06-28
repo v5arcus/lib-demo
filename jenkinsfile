@@ -1,7 +1,7 @@
 @Library ('vishant-library@master') _
 node {
 
-params.call()
+// params.call()
 
     stage('hello world') {
         hello.call()
