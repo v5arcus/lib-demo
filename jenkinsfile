@@ -1,6 +1,10 @@
 @Library ('vishant-library@master') _
 node {
 
+    tools { 
+        maven 'maven'
+    }
+
 properties(
     dildo.call()
 )
