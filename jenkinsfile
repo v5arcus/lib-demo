@@ -15,13 +15,13 @@ libraries {
     stages {
         stage('check user') {
             steps{
-                checkUser 'okay report'
+                checkUser.call()
             }
         }
 
 	    stage('Demo') {
             steps {
-                hello.call()
+                hello 'ititititi'
             }
         }
         stage('deployy') {
