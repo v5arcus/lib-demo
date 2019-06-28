@@ -1,4 +1,9 @@
 node {
+
+libraries {
+  lib('vishant-library@master')
+}
+
     parameters {
         string(defaultValue: 'staging', name: 'CLUSTER_CONFIG', description: 'choose staging for t1/s1')
         choice(choices: 't0\ns0\nt1\ns1', name:'ENVIRONMENT_NAME', description: 'Environment where Pod running')
