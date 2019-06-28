@@ -6,11 +6,6 @@ library 'vishant-library@master'
         hello.call()
     }
 
-    post { 
-        always { 
-            cleanWs()
-        }
-    }
     // stage('call param') {
         
     // }
