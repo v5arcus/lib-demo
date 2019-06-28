@@ -1,9 +1,9 @@
 node {
 
-library 'vishant-library@master'
+
 
     stage('hello world') {
-        hello.call()
+        echo 'hello world'
     }
 
     // stage('call param') {
