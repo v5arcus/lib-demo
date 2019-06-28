@@ -1,5 +1,7 @@
 node {
 
+library 'vishant-library@master'
+
     params.call()
 
     stage('hello world') {
