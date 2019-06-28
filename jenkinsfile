@@ -1,11 +1,7 @@
 @Library ('vishant-library@master') _
 node {
 
-    properties([
-        parameters([
-            params.call()
-        ])
-    ])
+params.call()
 
     stage('hello world') {
         hello.call()
