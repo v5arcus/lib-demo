@@ -2,9 +2,9 @@
 node {
 
 properties([
-        parameters([
+        parameters(
             params.call()
-        ])
+        )
     ])
 
     stage('hello world') {
