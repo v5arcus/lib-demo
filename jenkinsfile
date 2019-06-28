@@ -21,7 +21,7 @@ libraries {
 
 	    stage('Demo') {
             steps {
-                hello 'ititititi'
+                hello.call()
             }
         }
         stage('deployy') {
