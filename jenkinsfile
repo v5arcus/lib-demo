@@ -2,16 +2,12 @@ node {
 
 library 'vishant-library@master'
 
-    parameters {
-        params.call()
-    }
-
     stage('hello world') {
         hello.call()
     }
 
     stage('call param') {
-        sh "echo ${BUILD_NUMBER}"
+        
     }
 }
 
