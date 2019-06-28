@@ -1,6 +1,6 @@
 node {
 
-
+library 'vishant-library@master'
 
     stage('hello world') {
         echo 'hello world'
