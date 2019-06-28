@@ -3,7 +3,7 @@ node {
 library 'vishant-library@master'
 
     parameters{
-
+        params.call()
     }
 
     stage('hello world') {
