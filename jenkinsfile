@@ -1,8 +1,6 @@
 node {
 
-libraries {
-  lib('vishant-library@master')
-}
+library 'vishant-library@master'
 
     parameters {
         string(defaultValue: 'staging', name: 'CLUSTER_CONFIG', description: 'choose staging for t1/s1')
