@@ -2,7 +2,9 @@ node {
 
 library 'vishant-library@master'
 
-    params.call()
+    parameters{
+
+    }
 
     stage('hello world') {
         hello.call()
