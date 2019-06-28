@@ -1,6 +1,5 @@
-node {
-
 library 'vishant-library@master'
+node {
 
     properties([
         parameters([
