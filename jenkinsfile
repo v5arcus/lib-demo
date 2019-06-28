@@ -15,7 +15,9 @@ libraries {
     stages {
         stage('check user') {
             steps{
+                script{
                 checkUser.call()
+                }
             }
         }
 
