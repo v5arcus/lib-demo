@@ -5,7 +5,7 @@ libraries {
   lib('vishant-library@master')
 }
     parameters {
-        params 'latest'
+        params.call()
     }
 
     stages {
