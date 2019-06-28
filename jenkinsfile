@@ -5,6 +5,10 @@ properties(
     dildo.call()
 )
 
+    stage('check user'){
+        checkUser()
+    }
+
     stage('hello world') {
         hello.call()
     }
