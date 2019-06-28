@@ -1,4 +1,5 @@
 @Library ('vishant-library@master') _
+def mvnTool = tool 'Maven_3_5_0'
 node {
 
     // tools { 
