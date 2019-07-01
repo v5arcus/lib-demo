@@ -13,8 +13,8 @@ properties(
         checkUser()
     }
 
-    stage('hello world') {
-        serviceName.call()
+    stage('service name') {
+        helmSvcName.call()
     }
 
     stage('Current Image Tag'){
