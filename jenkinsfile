@@ -7,7 +7,7 @@ node {
                doGenerateSubmoduleConfigurations: false,
                extensions : [/*[$class: 'CleanBeforeCheckout']*/],
                submoduleCfg : [],
-               userRemoteConfigs: [[credentialsId: 'bitbucket-access', url: 'git@bitbucket.org:/bitbucket/scm/noon-wallet-engineering/load-money-service.git']]
+               userRemoteConfigs: [[credentialsId: 'bitbucket-access', url: 'git@bitbucket.org:noon-wallet-engineering/load-money-service.git']]
            ])
 
 
