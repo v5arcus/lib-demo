@@ -7,7 +7,7 @@ node {
 // )
 
     stage('Plan'){
-        checkUser(staging)
+        checkUser 'staging'
         helmSvcName.call()
         currentImageTag.call()
     }
