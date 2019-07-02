@@ -12,7 +12,7 @@ node {
     
     stage('Plan'){
         pl.clusterConfig 'staging'
-        helmSvcName.call(load-money-service)
+        helmSvcName.call 'load-money-service'
         currentImageTag.call(t0,load-money-service,staging)
     }
 
