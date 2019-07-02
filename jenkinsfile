@@ -1,5 +1,5 @@
 @Library ('vishant-library@master') _
-import io.noon.checkUser
+import io.noon.*
 
 node {
 
@@ -8,10 +8,10 @@ node {
 //     dildo.call()
 // )
 
-pl = new checkUser()
+// pl = new checkUser()
     
     stage('Plan'){
-        pl.clusterConfig(staging)
+        checkUser.clusterConfig(staging)
         helmSvcName.call(load-money-service)
         currentImageTag.call(t0,load-money-service,staging)
     }
