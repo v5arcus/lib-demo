@@ -7,7 +7,8 @@ node {
 // properties(
 //     dildo.call()
 // )
-    checkUser.clusterConfig(staging)
+
+pl = new checkUser()
     
     stage('Plan'){
         checkUser.clusterConfig(staging)
