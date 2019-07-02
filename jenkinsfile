@@ -7,7 +7,8 @@ node {
 // properties(
 //     dildo.call()
 // )
-
+    checkUser.clusterConfig(staging)
+    
     stage('Plan'){
         checkUser.clusterConfig(staging)
         helmSvcName.call(load-money-service)
