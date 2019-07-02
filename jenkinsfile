@@ -7,9 +7,9 @@ node {
 // )
 
     stage('Plan'){
-        checkUser ('staging')
-        helmSvcName.call ('load-money-service')
-        currentImageTag.call ('t0, load-money-service, staging')
+        checkUser 'staging'
+        helmSvcName.call 'load-money-service'
+        currentImageTag.call 't0,load-money-service,staging'
     }
 
     // stage('service name') {
