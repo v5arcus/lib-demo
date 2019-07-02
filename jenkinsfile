@@ -8,10 +8,10 @@ node {
 //     dildo.call()
 // )
 
-// pl = new checkUser()
+ pl = new checkUser()
     
     stage('Plan'){
-        checkUser.clusterConfig(staging)
+        pl.clusterConfig(staging)
         helmSvcName.call(load-money-service)
         currentImageTag.call(t0,load-money-service,staging)
     }
