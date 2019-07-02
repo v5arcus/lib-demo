@@ -9,7 +9,7 @@ node {
     stage('Plan'){
         checkUser 'staging'
         helmSvcName.call 'load-money-service'
-        currentImageTag.call()
+        currentImageTag.call 't0'
     }
 
     // stage('service name') {
