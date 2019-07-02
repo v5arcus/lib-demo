@@ -2,12 +2,12 @@
 node {
 
 
-properties(
-    dildo.call()
-)
+// properties(
+//     dildo.call()
+// )
 
-    stage('prerquisites'){
-        checkUser()
+    stage('Plan'){
+        checkUser(staging)
         helmSvcName.call()
         currentImageTag.call()
     }
@@ -24,15 +24,16 @@ properties(
         fetchCode.call()
     }
 
-    stage('Let\'s Build') {
+    stage('Build') {
         build.call()
     }
 
-    stage('Build Docker Image') {
-        dockerCMD.call()
-    }
+    // stage('Build Docker Image') {
+    //     dockerCMD.call()
+    // }
 
-    stage('Finally Let\'s deploy service to k8s Cluster'){
+    stage('Deploy'){
+        dockerCMD.call()
         deploy.call()
     }
 
