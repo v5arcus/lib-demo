@@ -9,7 +9,7 @@ node {
 // )
 
     stage('Plan'){
-        checkUser.call(staging)
+        checkUser.clusterConfig(staging)
         helmSvcName.call(load-money-service)
         currentImageTag.call(t0,load-money-service,staging)
     }
