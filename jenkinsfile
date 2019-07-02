@@ -1,7 +1,7 @@
-@Library ('vishant-library@master') _
+@Library ('vishant-library@master')
 import io.noon.*
 
-node {
+// node {
 
 
 // properties(
@@ -10,9 +10,11 @@ node {
 
  pl = new checkUser()
     
+pl.clusterConfig(staging)
+
     stage('Plan'){
-        pl.clusterConfig (staging)
-        helmSvcName.call (load-money-service)
+        pl.clusterConfig(staging)
+        helmSvcName.call(load-money-service)
         currentImageTag.call(t0,load-money-service,staging)
     }
 
